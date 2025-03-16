@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>TheMKDev Website</title>
+  </head>
+
+  <body class="bg-main text-main">
+    <header class="primary-header">
+      <div>
+        <a href="#" class="ff-header fs-header fw-bold text-main">MK Dev</a>
+
+        <button class="mobile-nav-toggle">
+          <img class="icon-hamburger" src="SVG/hamburger.svg" alt="" />
+          <img class="icon-close" src="SVG/close.svg" alt="" />
+        </button>
+
+        <nav class="primary-nav">
+          <ul>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#hero-section">Start</a></li>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#developer-section">Developer</a></li>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#artist-section">Artist</a></li>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#experience-section">Experience</a></li>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#about-section">About</a></li>
+            <li><a class="primary-nav-links | ff-label fw-bold fs-body" href="#link-section">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero-section | bg-shade" id="hero-section">
+        <div class="hero-wrapper gutter-container">
+          <div class="hero-text">
+            <h1 class="hero-name | ff-header fs-header fw-bold text-accent-main">Mohammed Alkhayat</h1>
+            <h3 class="hero-titles | ff-body fs-subheader fw-regular text-main">Developer & Artist</h3>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img class="hero-image" src="Pictures/dennis.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="section-transition box-transition"></div>
+
+      <section class="developer-section" id="developer-section">
+        <div class="gutter-container">
+          <h1 class="padding-block-title | section-title">Developer</h1>
+        </div>
+
+        <div class="developer-content-wrapper">
+          <div class="itch-game-list gutter-container">
+            <div class="itch-game-wrapper">
+              <div class="itch-game-info-wrapper">
+                <div class="itch-game-text">
+                  <h3 class="ff-body fs-header fw-bold text-main">Death of the Arcade</h3>
+                  <p class="ff-body fs-body fw-regular text-main">a momentum based platformer, made in Unity</p>
+                </div>
+                <div class="itch-game-buttons">
+                  <a href="https://themkdev.itch.io/death-of-the-arcade"><button class="button">Play</button></a>
+                  <a href="https://themkdev.itch.io"><button class="button" data-type="inverted">More</button></a>
+                </div>
+              </div>
+
+              <img class="itch-game-cover" src="Pictures/DeathOfTheArcadeItchCover.png" alt="" />
+            </div>
+
+            <div class="itch-game-wrapper">
+              <div class="itch-game-info-wrapper" data-type="flipped">
+                <div class="itch-game-text">
+                  <h3 class="ff-body fs-header fw-bold text-main">Spell-evator</h3>
+                  <p class="ff-body fs-body fw-regular text-main">Learn to spell on an elevator, made in Unity</p>
+                </div>
+
+                <div class="itch-game-buttons">
+                  <a href="https://themkdev.itch.io/spell-evator"><button class="button">Play</button></a>
+                  <a href="https://themkdev.itch.io"><button class="button" data-type="inverted">More</button></a>
+                </div>
+              </div>
+
+              <img class="itch-game-cover" data-type="flipped" src="Pictures/Spellevator.png" alt="" />
+            </div>
+          </div>
+
+          <div class="terminal-wrapper | gutter-container">
+            <div class="terminal-bar">
+              <div class="terminal-bar-title-wrapper">
+                <img class="terminal-bar-title-icon" src="SVG/folderClosed.svg" alt="" />
+                <p class="terminal-bar-name ff-body fs-body fw-regular text-main">Project Terminal</p>
+              </div>
+
+              <div class="terminal-bar-button-wrapper">
+                <img class="terminal-bar-button" src="SVG/minus.svg" alt="" />
+                <img class="terminal-bar-button" src="SVG/minimize.svg" alt="" />
+                <img class="terminal-bar-button" src="SVG/close.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="terminal-window">
+              <div class="terminal-explorer">
+                <div class="terminal-folder-wrapper">
+                  <input type="checkbox" id="folder1" class="terminal-folder-dropdown-input" style="display: none" />
+                  <label for="folder1" class="terminal-folder-dropdown">
+                    <img class="terminal-folder-icon" src="SVG/arrowRight.svg" alt="" />
+                    <p class="terminal-folder-name | ff-body fw-regular fs-body">Home</p>
+                  </label>
+
+                  <div class="terminal-folder-content">
+                    <div class="terminal-file-wrapper" onclick="LoadTerminalFile('ReadMe')">
+                      <img class="terminal-file-icon" src="SVG/TxtFile.svg" alt="" />
+                      <p class="terminal-file-name | ff-body fw-light fs-body">ReadMe.md</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="terminal-folder-wrapper">
+                  <input type="checkbox" id="folder2" class="terminal-folder-dropdown-input" style="display: none" />
+                  <label for="folder2" class="terminal-folder-dropdown">
+                    <img class="terminal-folder-icon" src="SVG/arrowRight.svg" alt="" />
+                    <p class="terminal-folder-name | ff-body fw-regular fs-body">Python Projects</p>
+                  </label>
+
+                  <div class="terminal-folder-content">
+                    <div class="terminal-file-wrapper" onclick="LoadTerminalFile('HelloWorld')">
+                      <img class="terminal-file-icon" src="SVG/python.svg" alt="" />
+                      <p class="terminal-file-name | ff-body fw-light fs-body">HelloWorld.py</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="terminal-folder-wrapper">
+                  <input type="checkbox" id="folder3" class="terminal-folder-dropdown-input" style="display: none" />
+                  <label for="folder3" class="terminal-folder-dropdown">
+                    <img class="terminal-folder-icon" src="SVG/arrowRight.svg" alt="" />
+                    <p class="terminal-folder-name | ff-body fw-regular fs-body">Unity Games</p>
+                  </label>
+
+                  <div class="terminal-folder-content">
+                    <div class="terminal-file-wrapper" onclick="LoadTerminalFile('Game')">
+                      <img class="terminal-file-icon" src="SVG/unity.svg" alt="" />
+                      <p class="terminal-file-name | ff-body fw-light fs-body">Game.exe</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="terminal-output">select a file to begin...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-transition box-transition" style="scale: 1 -1 1"></div>
+
+      <section class="artist-section | bg-shade padding-block-section" id="artist-section">
+        <div class="gutter-container">
+          <h1 class="padding-block-title | section-title">Artist</h1>
+        </div>
+
+        <div class="artist-gallery-wrapper | gutter-container">
+          <div class="artist-gallery-cell | artist-gallery-cell-1">
+            <img class="artist-gallery-image" src="Pictures/SketchBook1-5.jpg" />
+
+            <div class="artist-image-description">
+              <a href="https://www.artstation.com/artwork/WXzgg2" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <div class="artist-gallery-cell | artist-gallery-cell-2">
+            <img class="artist-gallery-image" src="Pictures/PixelKitten.png" />
+
+            <div class="artist-image-description">
+              <a href="https://www.artstation.com/artwork/3E1z9m" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <div class="artist-gallery-cell | artist-gallery-cell-3">
+            <img class="artist-gallery-image" src="Pictures/SketchBook1-8.jpg" />
+
+            <div class="artist-image-description">
+              <a href="https://www.artstation.com/artwork/dy3ggX" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <div class="artist-gallery-cell | artist-gallery-cell-4">
+            <img class="artist-gallery-image" src="Pictures/StarrySunsetNoFrameUpscale.png" />
+
+            <div class="artist-image-description">
+              <a href="https://themkdev.artstation.com/projects/nJdXJO" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <div class="artist-gallery-cell | artist-gallery-cell-5">
+            <img class="artist-gallery-image" src="Pictures/SketchBook1-4.jpg" />
+
+            <div class="artist-image-description">
+              <a href="https://www.artstation.com/artwork/8Bok1q" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <div class="artist-gallery-cell | artist-gallery-cell-6">
+            <img class="artist-gallery-image" src="Pictures/SketchBook1-10.jpg" />
+
+            <div class="artist-image-description">
+              <a href="https://www.artstation.com/artwork/3ErLa2" target="_blank"
+                ><button class="artist-image-link-button | button" data-type="inverted">View</button></a
+              >
+            </div>
+          </div>
+
+          <a href="https://www.artstation.com/themkdev" target="_blank" class="artist-external-link-button-wrapper"
+            ><button class="button">More</button></a
+          >
+        </div>
+      </section>
+
+      <div class="section-transition box-transition"></div>
+
+      <section class="experience-section | padding-block-section" id="experience-section">
+        <h1 class="padding-block-title | section-title gutter-container">Experience</h1>
+
+        <div class="experience-subsection-spacing">
+          <div class="experience-scroller-wrapper">
+            <div class="experience-scroller">
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/Github.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Github</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/VSCode.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">VS Code</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/unity.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Unity</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/python.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Python</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/CSharp.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">C#</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/HTMLIcon.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">HTML</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/CSSIcon.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">CSS</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/JavaScriptIcon.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">JavaScript</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/Arduino.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Arduino</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/Figma.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Figma</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/Inkscape.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Inkscape</h2>
+              </div>
+              <div class="experience-scroller-item">
+                <img class="experience-scroller-item-icon" src="SVG/Aseprite.svg" alt="" />
+                <h2 class="experience-scroller-item-text | ff-body fw-light fs-body">Aseprite</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-certificate-wrapper | gutter-container">
+            <div class="experience-certificate-cards-wrapper">
+              <div class="experience-certificate-card-item" data-shown>
+                <img class="experience-certificate-card-logo" src="SVG/FTCJamIcon.svg" alt="" />
+
+                <div class="experience-certificate-card-text-wrapper">
+                  <h2 class="experience-certificate-card-title | fs-subheader fw-bold ff-header">FTC JAM</h2>
+
+                  <p class="experience-certificate-card-description | fs-body fw-regular ff-body">
+                    First place finish at the FTC game jam with a grand prize of 7,000 riyals, and 45 hours of
+                    workshops, bootcamps, and game development activities.
+                  </p>
+
+                  <a href="Files/FTCJamCertificate.png" target="_blank"
+                    ><button class="experience-certificate-card-button | button">View</button></a
+                  >
+                </div>
+              </div>
+
+              <div class="experience-certificate-card-item">
+                <img class="experience-certificate-card-logo" src="SVG/SDAIA.svg" alt="" />
+
+                <div class="experience-certificate-card-text-wrapper">
+                  <h2 class="experience-certificate-card-title | fs-subheader fw-bold ff-header">
+                    Saudi Data and AI Authority
+                  </h2>
+
+                  <p class="experience-certificate-card-description | fs-body fw-regular ff-body">
+                    Completed a 25 hour Future Intelligence AI course.
+                  </p>
+
+                  <a href="Files/SDAIACertificate.png" target="_blank"
+                    ><button class="experience-certificate-card-button | button">View</button></a
+                  >
+                </div>
+              </div>
+
+              <div class="experience-certificate-card-item">
+                <img class="experience-certificate-card-logo" src="SVG/TuwaiqAcademy.svg" alt="" />
+
+                <div class="experience-certificate-card-text-wrapper">
+                  <h2 class="experience-certificate-card-title | fs-subheader fw-bold ff-header">Tuwaiq Academy</h2>
+
+                  <p class="experience-certificate-card-description | fs-body fw-regular ff-body">
+                    Completed a 50 hour IoT Raspberry Pi course.
+                  </p>
+
+                  <a href="Files/TuwaiqRaspberryPiCertificate.pdf" target="_blank"
+                    ><button class="experience-certificate-card-button | button">View</button></a
+                  >
+                </div>
+              </div>
+
+              <div class="experience-certificate-card-item">
+                <img class="experience-certificate-card-logo" src="SVG/TuwaiqAcademy.svg" alt="" />
+
+                <div class="experience-certificate-card-text-wrapper">
+                  <h2 class="experience-certificate-card-title | fs-subheader fw-bold ff-header">Tuwaiq Academy</h2>
+
+                  <p class="experience-certificate-card-description | fs-body fw-regular ff-body">
+                    Completed a 20 hour Microbit Programming with Python course.
+                  </p>
+
+                  <a href="Files/TuwaiqMicrobitCertificate.pdf" target="_blank"
+                    ><button class="experience-certificate-card-button | button">View</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="experience-certificate-nav-wrapper">
+              <img
+                class="experience-certificate-slider-left-arrow"
+                src="SVG/arrowRight.svg"
+                style="transform: rotateZ(180deg)"
+                alt=""
+              />
+
+              <div class="experience-certificate-slider-button-nav">
+                <div class="experience-certificate-slider-button" data-button-selected></div>
+                <div class="experience-certificate-slider-button"></div>
+                <div class="experience-certificate-slider-button"></div>
+                <div class="experience-certificate-slider-button"></div>
+              </div>
+
+              <img class="experience-certificate-slider-right-arrow" src="SVG/arrowRight.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="experience-people-cards-wrapper | gutter-container">
+            <div class="experience-people-card">
+              <div class="experience-people-card-title-wrapper">
+                <a href="https://www.linkedin.com/in/mohammedAlkhayat/" target="_blank"
+                  ><img src="Pictures/dennis.jpg" alt="" class="experience-people-card-image"
+                /></a>
+
+                <div class="experience-people-card-title-text">
+                  <h2 class="experience-people-card-name | ff-header fs-label fw-regular">Mohammed Alkhay</h2>
+                  <p class="experience-people-card-job | ff-header fs-body fw-regular">Developer, Artist</p>
+                </div>
+              </div>
+              <div class="experience-people-card-quote">
+                <img class="experience-people-card-quote-icon-left" src="SVG/quotes.svg" alt="" />
+                <p class="experience-people-card-quote-text | ff-body fs-body fw-regular">
+                  I'm totally not biased in this but this guy is great with no major flaws
+                </p>
+                <img class="experience-people-card-quote-icon-right" src="SVG/quotes.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="experience-people-card">
+              <div class="experience-people-card-title-wrapper">
+                <a href="https://www.linkedin.com/in/mohammedAlkhayat/" target="_blank"
+                  ><img src="Pictures/dennis.jpg" alt="" class="experience-people-card-image"
+                /></a>
+
+                <div class="experience-people-card-title-text">
+                  <h2 class="experience-people-card-name | ff-header fs-label fw-regular">Mohammed Alkhayat</h2>
+                  <p class="experience-people-card-job | ff-header fs-body fw-regular">Developer, Artist</p>
+                </div>
+              </div>
+              <div class="experience-people-card-quote">
+                <img class="experience-people-card-quote-icon-left" src="SVG/quotes.svg" alt="" />
+                <p class="experience-people-card-quote-text | ff-body fs-body fw-regular">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum beatae consequuntur sed mollitia
+                  dolore! Temporibus dolorem ratione odio velit molestias reiciendis deserunt modi tempore expedita
+                </p>
+                <img class="experience-people-card-quote-icon-right" src="SVG/quotes.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="experience-people-card">
+              <div class="experience-people-card-title-wrapper">
+                <a href="https://www.linkedin.com/in/mohammedAlkhayat/" target="_blank"
+                  ><img src="Pictures/dennis.jpg" alt="" class="experience-people-card-image"
+                /></a>
+
+                <div class="experience-people-card-title-text">
+                  <h2 class="experience-people-card-name | ff-header fs-label fw-regular">Mohammed Alkhayat</h2>
+                  <p class="experience-people-card-job | ff-header fs-body fw-regular">Developer, Artist</p>
+                </div>
+              </div>
+              <div class="experience-people-card-quote">
+                <img class="experience-people-card-quote-icon-left" src="SVG/quotes.svg" alt="" />
+                <p class="experience-people-card-quote-text | ff-body fs-body fw-regular">
+                  I'm totally not biased in this but this guy is great with no major flaws
+                </p>
+                <img class="experience-people-card-quote-icon-right" src="SVG/quotes.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="experience-people-card">
+              <div class="experience-people-card-title-wrapper">
+                <a href="https://www.linkedin.com/in/mohammedAlkhayat/" target="_blank"
+                  ><img src="Pictures/dennis.jpg" alt="" class="experience-people-card-image"
+                /></a>
+
+                <div class="experience-people-card-title-text">
+                  <h2 class="experience-people-card-name | ff-header fs-label fw-regular">Mohammed Alkhayat</h2>
+                  <p class="experience-people-card-job | ff-header fs-body fw-regular">Developer, Artist</p>
+                </div>
+              </div>
+              <div class="experience-people-card-quote">
+                <img class="experience-people-card-quote-icon-left" src="SVG/quotes.svg" alt="" />
+                <p class="experience-people-card-quote-text | ff-body fs-body fw-regular">
+                  I'm totally not biased in this but this guy is great with no major flaws
+                </p>
+                <img class="experience-people-card-quote-icon-right" src="SVG/quotes.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- <div>
+            <ul>
+              <li>"random quote number 1"</li>
+              <li>"a really good guy"</li>
+              <li>"spends way to much time coding"</li>
+            </ul>
+            <ul>
+              <li>"I mean he's pretty smart"</li>
+              <li>"The biggest nerd I've ever seen"</li>
+              <li>"random quote number 6"</li>
+            </ul>
+          </div> -->
+        </div>
+      </section>
+
+      <div class="section-transition box-transition" style="scale: 1 -1 1"></div>
+
+      <section class="about-section sections bg-shade | padding-block-section" id="about-section">
+        <h1 class="padding-block-title | gutter-container section-title">About</h1>
+
+        <div class="about-wrapper | gutter-container">
+          <div class="about-paragraph about-paragraph-1">
+            <img class="about-photo" src="Pictures/dennis.jpg" alt="" />
+
+            <div class="about-text">
+              <h2 class="about-header | ff-header fs-subheader fw-bold">Humble Beginnings</h2>
+              <p class="about-body | ff-body fs-body fw-regular">
+                I'm Mohammed Nawaf AlKhayat but most people call me MK, born in Riyadh, Saudi Arabia around 2007 and
+                currently in the last year of high school.<br><br> I first got interested in coding from playing video games
+                with my friends, I saw how much fun it was to get together and play so I wondered if somehow I could
+                make games too. A few excruciatingly long tutorials later I had my very own crappy unity game, after
+                that I kept learning and making things that I was interested in and it just kept going from there.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-paragraph about-paragraph-2">
+            <div class="about-text">
+              <h2 class="about-header | ff-header fs-subheader fw-bold">Making Stuff</h2>
+              <p class="about-body | ff-body fs-body fw-regular">
+                I've been programming and learning for about 4 years now, working on various different things from Game
+                and Web Development to Python Apps and Arduino Projects. Some of my favorites include, a customized
+                version of battleship running in the python terminal that me and friends would spend all class playing,
+                a 2D platformer that one of my friends decided to speedrun, and a miniature Dance Dance Revolution
+                Arduino controller that lets you use your fingers to dance to rhythm games.<br><br> Aside from personal projects
+                I have done a lot of recognized work like, landing a paid freelance job making and maintaining a company
+                website, completing courses and bootcamps from companies like Tuwaiq Academy and SDAIA, and ranking high
+                in online game jams and winning the FTC JAM, the first game jam for high school students in Saudi Arabia
+                with a grand prize of 7000 riyals.
+              </p>
+            </div>
+
+            <img class="about-photo" src="Pictures/dennis.jpg" alt="" />
+          </div>
+
+          <div class="about-paragraph about-paragraph-3" data-section-last>
+            <img class="about-photo" src="Pictures/dennis.jpg" alt="" />
+
+            <div class="about-text">
+              <h2 class="about-header | ff-header fs-subheader fw-bold">The Next Step</h2>
+              <p class="about-body | ff-body fs-body fw-regular">
+                I have many different ideas and projects on my mind for the future so I made this website entirely from
+                scratch which I plan to keep it up to date with all the newest things I do.<br><br> If you have anything you'd
+                like to share or you just want to talk please don't hesitate to get in contact. - Sincerely, MK
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-transition box-transition"></div>
+
+      <section class="link-section sections | gutter-container padding-block-section" id="link-section">
+        <h1 class="padding-block-title | section-title">Links</h1>
+
+        <div class="links-list-wrapper">
+          <div class="link-group">
+            <h2 class="link-group-title | ff-label fs-label fw-normal">Contacts</h2>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/Gmail.svg" alt="" />
+              <a href="mailto:mns.alkhayat@gmail.com" target="_blank"
+                ><p class="link-item-text | ff-body fs-body fw-thin">mns.alkhayat@gmail.com</p></a
+              >
+            </div>
+
+            <div class="link-item" data-unclickable>
+              <img class="link-item-logo" src="SVG/WhatsApp.svg" alt="" />
+              <p class="link-item-text | ff-body fs-body fw-thin">+966 53 793 1418</p>
+            </div>
+          </div>
+
+          <div class="link-group">
+            <h2 class="link-group-title | ff-label fs-label fw-normal">Socials</h2>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/LinkedIn.svg" alt="" />
+              <a href="https://www.linkedin.com/in/mohammedAlkhayat/" target="_blank"
+                ><p class="link-item-text | ff-body fs-body fw-thin">LinkedIn</p></a
+              >
+            </div>
+
+            <div class="link-item" data-unclickable>
+              <img class="link-item-logo" src="SVG/Discord.svg" alt="" />
+              <p class="link-item-text | ff-body fs-body fw-thin">_mkdev</p>
+            </div>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/Twitter.svg" alt="" />
+              <a href="https://x.com/TheMKDev" target="_blank">
+                <p class="link-item-text | ff-body fs-body fw-thin">Twitter</p></a
+              >
+            </div>
+          </div>
+
+          <div class="link-group">
+            <h2 class="link-group-title | ff-label fs-label fw-normal">Projects</h2>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/ItchIo.svg" alt="" />
+              <a href="https://themkdev.itch.io/" target="_blank">
+                <p class="link-item-text | ff-body fs-body fw-thin">Itch</p></a
+              >
+            </div>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/Github.svg" alt="" />
+              <a href="https://github.com/mokh-dev" target="_blank">
+                <p class="link-item-text | ff-body fs-body fw-thin">Github</p></a
+              >
+            </div>
+
+            <div class="link-item">
+              <img class="link-item-logo" src="SVG/ArtStation.svg" alt="" />
+              <a href="https://www.artstation.com/themkdev" target="_blank">
+                <p class="link-item-text | ff-body fs-body fw-thin">Artstation</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="main.js"></script>
+</html>
