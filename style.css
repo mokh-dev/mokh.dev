@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "WorkSans";
-  src: url(Fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+  src: url(/Fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
 
   font-weight: 100 400 900;
 
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Syne";
-  src: url(Fonts/Syne-VariableFont_wght.ttf) format('truetype');
+  src: url(/Fonts/Syne-VariableFont_wght.ttf) format('truetype');
   font-weight: 100 400 900;
 
   font-style: normal;
