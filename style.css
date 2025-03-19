@@ -441,9 +441,13 @@ hr {
 /* #region ----Hero---- */
 
 .hero-section {
-  min-height: 80%;
+  min-height: 75vh;
+  max-height: 75vh;
   display: flex;
   align-items: center;
+  padding-top: 10vh;
+
+  overflow-y: hidden;
 }
 
 .hero-wrapper {
@@ -458,7 +462,6 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  height: 60vh;
 }
 .hero-name {
   min-width: none;
@@ -468,10 +471,54 @@ hr {
   margin-bottom: var(--size-600);
 }
 .hero-image-wrapper {
-  width: 50%;
-}
-.hero-image-wrapper {
   width: 100%;
+  align-self: center;
+
+  
+}
+.hero-image {
+
+  filter: drop-shadow(0px 0px 15px #000);
+  aspect-ratio: 10/14;
+
+  object-fit: cover;
+  object-position: 100% 0%;
+  margin-inline: auto;
+}
+
+@media (max-width: 1023px) {
+  .hero-section {
+    min-height: 75vh;
+    max-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+  
+    overflow-y: hidden;
+  }
+  
+  .hero-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    min-height: 75vh;
+    max-height: 75vh;
+
+  }
+
+  .hero-image {
+    height: 60vh;
+
+    filter: drop-shadow(0px 0px 15px #000);
+    aspect-ratio: 10/14;
+  
+    object-fit: cover;
+    object-position: 100% 0%;
+    margin-inline: auto;
+  }
+
 }
 
 /* Hero | Desktop */
@@ -485,6 +532,17 @@ hr {
   }
   .hero-image-wrapper {
     max-width: 50vw;
+  }
+
+  .hero-image {
+
+    filter: drop-shadow(0px 0px 15px #000);
+    height: 75vh;
+    aspect-ratio: 10/14;
+  
+    object-fit: cover;
+    object-position: 100% 0%;
+    margin-inline: auto;
   }
 }
 
@@ -1342,7 +1400,7 @@ html:has(.experience-scroller:target) .experience-scroller {
 
   background-color: var(--clr-secondary-main);
 
-  padding-block: var(--size-650);
+  padding-block: var(--size-500);
 
   border-radius: 1rem;
 
@@ -1372,7 +1430,7 @@ html:has(.experience-scroller:target) .experience-scroller {
   padding-bottom: none;
   border-bottom: none;
 }
-.about-paragraph-1 {
+/* .about-paragraph-1 {
   height: 22rem;
 }
 .about-paragraph-2 {
@@ -1381,7 +1439,7 @@ html:has(.experience-scroller:target) .experience-scroller {
 .about-paragraph-3 {
   height: 16rem;
   padding-bottom: 0 !important;
-}
+} */
 
 
 .about-text {
