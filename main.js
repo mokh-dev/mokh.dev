@@ -93,7 +93,7 @@ const terminalOutput = document.querySelector(".terminal-output");
 
 
 var terminalFiles = {
-  ReadMe: `<h2>Welcome</h2><hr><br><p>This is the project terminal. where you can find all of my programming related projects. You can use the file explorer to find and select a project you want to see. Currently there isn't much here because I have the SAAT exam coming up so I don't have the time to work on the website, but for now you can find my work on the other sites I have in the file explorer</p>`,
+  ReadMe: `<h2>Welcome</h2><hr><br><p>This is the project terminal. where you can find all of my programming related projects. You can use the file explorer to find and select a project you want to see. Currently there isn't much here because college is time consuming. so I don't have the time to work on the website (probably just procrastinating), but for now you can check out what I do have in the file explorer.</p>`,
   HelloWorld: `<h2>Python Projects</h2><hr><br><p>Python was the first programming language I learned because it was the easiest to understand, but the more time you put into learning it the more you see just how many things you can make with it. You can find my projects and their source code on my GitHub.</p>`,
   Game: `<h2>Unity Games</h2><hr><br><p>I have made a lot of Games, sometimes I make them for a game jam but usually I make them for fun, some of them turn out good and some others not so much, you can see for yourself which ones you like on my Itch page.</p>`,
 };
